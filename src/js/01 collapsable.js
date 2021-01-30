@@ -20,8 +20,7 @@ legendDesignElement.addEventListener("click", handleCollapsable);
 legendRellenaElement.addEventListener("click", handleCollapsable);
 legendComparteElement.addEventListener("click", handleCollapsable); */
 
-
-const legendDesignElement = document.querySelector(".legend__design");
+/* const legendDesignElement = document.querySelector(".legend__design");
 const legendRellenaElement = document.querySelector(".legend__rellena");
 const legendComparteElement = document.querySelector(".legend__comparte");
 
@@ -41,4 +40,16 @@ function handleCollapsableComparte() {
 
 legendDesignElement.addEventListener("click", handleCollapsableDesign);
 legendRellenaElement.addEventListener("click", handleCollapsableRellena);
-legendComparteElement.addEventListener("click", handleCollapsableComparte);
+legendComparteElement.addEventListener("click", handleCollapsableComparte); */
+
+const legendElements = document.querySelectorAll(".legend");
+/* const collapsableElements = document.querySelectorAll(".collapsable"); */
+/* console.log(legendElements[0].parentElement); */
+
+function handleCollapsable(event) {
+  const collapsableElement = event.currentTarget.parentElement;
+  collapsableElement.classList.toggle("collapsable--on");
+}
+for (const legendElement of legendElements) {
+  legendElement.addEventListener("click", handleCollapsable);
+}
