@@ -52,14 +52,43 @@
 // .form {
 //   background-image: linear-gradient(to bottom, $colorBackground, white 9%);
 // }
-
-.collapsable.collapsable--on {
-  .collapsable {
+.collapsableDesign--hide {
+  display: none;
+}
+.collapsableRellena--hide {
+  display: none;
+}
+.collapsableComparte--hide {
+  display: none;
+}
+.collapsableDesign.collapsable--on {
+  .collapsableDesign {
     &--hide {
-      display: none;
+      display: block;
     }
     &--close {
       transform: rotate(180deg);
     }
   }
 }
+.collapsableRellena.collapsable--on {
+  .collapsableRellena {
+    &--hide {
+      display: block;
+    }
+    &--close {
+      transform: rotate(180deg);
+    }
+  }
+}
+.collapsableComparte.collapsable--on {
+  .collapsableComparte {
+    &--hide {
+      display: block;
+    }
+    &--close {
+      transform: rotate(180deg);
+    }
+  }
+}
+
