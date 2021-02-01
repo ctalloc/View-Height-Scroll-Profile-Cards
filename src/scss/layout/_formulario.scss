@@ -92,3 +92,14 @@
   }
 }
 
+// Marcjanna - the latest solution
+.collapsable.collapsable--on {
+  .collapsableComparte {
+    &--hide {
+      display: block;
+    }
+    &--close {
+      transform: rotate(180deg);
+    }
+  }
+}
