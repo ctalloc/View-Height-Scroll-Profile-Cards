@@ -35,14 +35,15 @@
     <div class="field">
       <label class="field__label" for="profile-image">Imagen de perfil</label>
       <div class="rellena-image">
+        <input type="file" class="js__profile-upload-btn" />
         <input
-          class="rellena-image__add"
+          class="rellena-image__add js__profile-trigger"
           id="profile-image"
           type="submit"
           value="Añadir imagen"
           name="photo"
         />
-        <div class="rellena-image__square"></div>
+        <div class="rellena-image__square js__profile-preview"></div>
       </div>
     </div>
 
